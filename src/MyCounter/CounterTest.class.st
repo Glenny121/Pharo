@@ -13,3 +13,11 @@ self assert: c count equals: 7
 
 
 ]
+
+{ #category : #tests }
+CounterTest >> testIncremento [
+| c |
+c := Counter new.
+c count: 0 ; increment; increment.
+self assert: c count equals: 2
+]
